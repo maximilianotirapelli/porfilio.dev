@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "2023 - 2024",
+    title: "ECOMMERCE",
+    company: "PandaShop",
+    description:
+      " Gestioné el stock, seleccioné los productos para la venta y de la gestión de las devoluciones, la planificación y el desarrollo de la tienda. Actuar como interfaz entre varios departamentos especializados.",
+    link: "https://www.linkedin.com/in/maximiliano-tirapelli/",
+  },
+  {
+    date: "2020 - 2023",
+    title: "TEAM LEADER",
+    company: "PedidosYa Market",
+    description:
+      "• Lideré equipo entre 10 - 15 personas• Recepcioné mercadería, aumenté la cantidad de proveedores en 30% y disminuir la espera delos mismos, en 25%. control de cantidad y calidad.• Desarrollé planes de mejoras en base a los KPI aumenté un 15% la cantidad de pedidos y disminuir la demora en un 20%.• Controlé stock al 100% y rotación de la mercadería.",
+  },
+  {
+    date: "2018 - 2020",
+    title: "STORE MANAGER",
+    company: "Garbarino",
+    description:
+      "•Lideré equipo entre 10 - 15 personas• Tareas administrativas, altas y bajas de legajos.• Desarrollé planes de mejoras en base a los análisis de KPI.• Control de stock al 100% y rotación de la mercadería.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
