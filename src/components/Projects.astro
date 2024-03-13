@@ -6,6 +6,7 @@ import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import React from "./icons/React.astro"
 import ThreeJs from "./icons/ThreeJs.astro"
+import JavaScript from "./icons/JavaScript.astro"
 
 const TAGS = {
   NEXT: {
@@ -27,6 +28,11 @@ const TAGS = {
     name: "Three",
     class: "bg-black text-white",
     icon: ThreeJs
+  },
+  JAVASCRIPT:{
+    name: "JavaScript",
+    class: "bg-black text-white",
+    icon: JavaScript
   }
 }
 const PROJECTS = [
@@ -34,16 +40,16 @@ const PROJECTS = [
     title: "DH Technology",
     description:
       "Ecommerce, de alquiler de tecnologia, presentado como proyecto final en DigitalHouse. Poniendo en practica el front, el back, diseño ux/ui y despliegue en AWS",
-    link: "",
+    link: "/",
     github: "https://github.com/maximilianotirapelli",
     image: "/projects/dhcategorias.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND,TAGS.REACT],
+    tags: [TAGS.NEXT,TAGS.JAVASCRIPT, TAGS.TAILWIND,TAGS.REACT],
   },
   {
     title: "3D Web Developer Portfolio in React JS | Three.js",
     description:
       "The most impressive websites in the world use 3D graphics and animations to bring their content to life. ThreeJS 3D Developer Portfolio! ",
-    link: "",
+    link: "/",
     image: "/projects/brain.webp",
     tags: [TAGS.THREE, TAGS.TAILWIND,TAGS.REACT],
   },
